@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table styling css</title>
+
+    <style>
+         .tables{
+            background-color: crimson;
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            max-width: 500px;
+            margin: 20px auto 0 auto;
+            padding: 10px;
+         }
+         .tables-list{
+            border-collapse: collapse;
+             margin: 20px auto 0 auto;
+             font-size: 0.9rem;
+             min-width: 400px;
+             border-radius: 5px 5px 5px 5px;
+             overflow: hidden;
+             padding: 30px;
+             box-shadow: 0 0 20px rgba(0,0,0, 0.25);
+         }
+         .tables-list thead tr{
+            background-color: seagreen;
+            color: white;
+            font-weight: bold;
+            text-align: left;
+         }
+
+         .tables-list th,
+         .tables-list td{
+            padding: 12px 15px;
+
+         }
+
+         .tables-list tbody tr{
+            border-bottom: 2px solid lightgray ;
+         }
+         .tables-list tr:nth-of-type(even){
+            background-color: lightslategray;
+
+         }
+         .tables-list tr:last-of-type{
+           border-bottom: 5px solid seagreen;
+         
+
+         }
+         .tables-list tr.acvtive-row{
+            font-weight: bold;
+            color: seagreen;
+         }
+
+         tr{
+            cursor: pointer;
+
+         }
+         tr:hover{
+            background-color: lightgray;
+         }
+    </style>
+
+</head>
+<body>
+    <h1 class="tables" >Css Properties for Tables</h1>
+
+    <table class="tables-list" >
+        <thead>
+            <tr>
+                <th>Sr.No</th>
+                <th>Name</th>
+                <th>Marks</th>
+                <th>Course</th>
+            </tr>
+             </thead>
+
+            <tr class="acvtive-row" >
+                <td>01</td>
+                <td>Mithilesh</td>
+                <td>96%</td>
+                <td>BCA</td>
+            </tr>
+
+            <tr>
+                <td>02</td>
+                <td>Sourav</td>
+                <td>80%</td>
+                <td>BCA</td>
+            </tr>
+
+            <tr class="acvtive-row">
+                <td>03</td>
+                <td>Sumit</td>
+                <td>75%</td>
+                <td>BCA</td>
+            </tr>
+
+            <tr>
+                <td>04</td>
+                <td>Bishnu</td>
+                <td>99%</td>
+                <td>BCA</td>
+            </tr>
+             
+       
+    </table>
+    
+</body>
+</html>
